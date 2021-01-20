@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arsalan Fitness Studio</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@600&display=swap" rel="stylesheet">
+<style>
+    /* CSS Reset */
+    body {
+        font-family: 'Baloo Bhai 2', cursive;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url(bg.jpg);
+        /* width: 150px; */
+        height: 1277px;
+
+    }
+
+    .left {
+        display: inline-block;
+        position: absolute;
+        top: 20px;
+        left: 34px;
+        /* border: 2px solid red; */
+    }
+
+    .left img {
+        width: 60px;
+        filter: invert(26%);
+        margin: 0px 50px;
+
+    }
+
+    .left div {
+        text-align: center;
+        font-size: 16px;
+        line-height: 0px;
+
+
+    }
+
+    .mid {
+        display: block;
+        margin: 50px auto;
+        width: 41%;
+        border: 2px solid greenyellow;
+
+    }
+
+    .right {
+        position: absolute;
+        top: 40px;
+        right: 8px;
+        display: inline-block;
+        /* border: 2px solid yellow; */
+    }
+
+    .navbar li {
+        display: inline-block;
+        /* font-size: 16px; */
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 34px 14px;
+        font-size: 19px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        color: rgb(22, 122, 126);
+        text-decoration: underline;
+    }
+
+    .btn {
+        margin: 10px 3px;
+        background-color: black;
+        color: white;
+        padding: 4px 14px;
+        border: 2px solid gray;
+        border-radius: 8px;
+        font-size: 12px;
+        cursor: pointer;
+        font-family: 'Baloo Bhai 2', cursive;
+    }
+
+    .btn:hover {
+        background-color: rgb(22, 122, 126);
+        text-decoration: underline;
+    }
+
+    .container {
+        /* border: 4px solid orange; */
+        margin: 66px 77px;
+        padding: 15px 60px;
+        border-radius: 30px;
+        width: 37%;
+    }
+
+    .container h1 {
+        text-align: center;
+        color: yellow;
+    }
+
+    .container button {
+        display: block;
+        width: 86%;
+        margin: auto;
+        background-color: red;
+
+    }
+    
+
+    .form-group input {
+        font-size: 19px;
+        text-align: center;
+        display: block;
+        width: 376px;
+        padding: 0px;
+        border: 2px solid rgba(151, 107, 107, 0.733);
+        margin: 11px auto;
+        border-radius: 12px;
+        font-family: 'Baloo Bhai 2', cursive;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- Left box for logo -->
+        <div class="left">
+            <img src="logo.png" alt="">
+            <div>Arsalan Fitness Studio</div>
+        </div>
+        <!-- Middle box for navigation bar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <!-- Right box for buttons -->
+        <div class="right">
+            <button class="btn">Call Us</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the Best Gym of Karachi Now</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your first name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your last name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your postal code">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your address">
+            </div>
+            <button class="btn">Join Now</button>
+        </form>
+
+    </div>
+</body>
+
+</html>
